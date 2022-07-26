@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    background: #636C79;
+}
+
+/* ------------------------navbar section started here------------- */
+nav {
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav ul li a {
+    text-transform: capitalize;
+    font-size: 18px;
+    color: rgb(212, 212, 212);
+}
+
+nav ul li a.nav__btn {
+    padding: 8px 40px;
+    color: rgb(212, 212, 212);
+    font-weight: 400;
+    border: 1px solid rgba(212, 212, 212, 0.539);
+}
+
+/* -------------first view section started here-----------------*/
+
+.first__view {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 30px;
+    width: 100%;
+    padding: 4% 8%;
+
+}
+
+.first__view .image__content {
+    width: 500px;
+    min-width: 360px;
+    height: 550px;
+    min-height: 300px;
+    background: url(./images/2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.text__content {
+ 
+    padding: 50px 0px;
+    width: 700px;
+    min-width: 360px;
+    height: 550px;
+    min-height: 300px;
+}
+
+.text__content h1 {
+    color: #fff;
+    font-size: 65px;
+}
+
+.text__content p {
+    width: 70%;
+    margin-top: 30px;
+    color: rgb(209, 209, 209);
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.main__box {
+    margin-top: 30px;
+    background: #fff;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.main__box img {
+    width: 18px;
+}
+
+.main__box input {
+    width: 69%;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+::placeholder {
+    color: rgba(128, 128, 128, 0.692);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.main__box .btn {
+    background: #8BB7A2;
+    padding: 15px 30px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* ----------------------archivement section started----------------- */
+
+.archivement__sectiom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 90px 8%;
+}
+
+.archivement__sectiom h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+.counter {
+    width: 100%;
+
+}
+
+.counter ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.counter ul {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.counter ul span {
+    font-size: 18px;
+    color: #636C79;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.archivement__sectiom .image {
+    background: url(./images/3.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 600px;
+    display: grid;
+    place-items: center;
+}
+.archivement__sectiom .image img
+{
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.play__icon_border_1,.play__icon_border_2
+{
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* ---------------service section started------------------- */
+.services
+{
+    margin-top: 120px;
+    padding: 0px 8%;
+}
+.services h1
+{
+    font-size: 45px;
+    text-align: center;
+}
+.card
+{
+    margin-top: 70px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap :30px;
+}
+.card .text_side
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    max-width: 700px;
+}
+.card .text_side h2
+{
+    margin-block: 30px;
+    font-size: 40px;
+    width: 80%;
+    text-transform: capitalize;
+}
+.card .text_side p
+{
+    margin-block: 30px;
+    font-size: 18px;
+    color: #636C79;
+    width: 76%;
+    line-height: 30px;
+}
+.card .card__btn
+{
+    padding: 20px 70px;
+    border: none;
+    background: #8BB7A2;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.image_side
+{
+    width: 700PX;
+    height: 500px;
+}
+.image_side img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+}
+
+.card:nth-child(3) .image_side img
+{
+    /* object-fit: cover; */
+    object-position: top;
+}
+.card:nth-child(4) .image_side img
+{
+    /* object-fit: cover; */
+    object-position: left;
+}
+
+
+/* ---------------------team section started-------------- */
+
+.team__section
+{
+    margin-top: 20px;
+    padding: 0px 8%;
+}
+.team__section .text__content
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.team__section .text__content h2
+{
+    color: #000;
+    font-size: 40px;
+    text-transform: capitalize;
+    width: 700px;
+}
+.team__section .text__content p
+{
+    color: #636C79;
+    width: 600px;
+}
+.profile__container
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+.profile__container .profile
+{
+    padding: 15px;
+    width: 400px;
+}
+.profile__container .profile img
+{
+    width: 100%;
+    height: 400px;
+}
+.profile__container .profile h3
+{
+    padding: 10px 0px;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+.profile__container .profile p
+{
+    color: #636C79;
+    font-size: 15px;
+}
+.team__section .btn
+{
+    background-color: #8BB7A2;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    padding: 15px 40px;
+    margin: 30px ;
+}
+/* -----------------footer section started ----------------- */
+footer
+{
+    padding: 20px 8%;
+    background: #10181D;
+}
+footer .top_footer
+{
+    display: flex;
+    padding: 20px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid rgba(141, 140, 140, 0.518);
+}
+footer .top_footer ul
+{
+    display: flex;
+    gap: 20px;
+}
+footer .top_footer ul li img
+{
+    width: 20px;
+}
+footer .top_footer ul li
+{
+    background-color: #282F34;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    width: 50px;
+    height: 50px;
+}
+.links_container
+{
+    display: flex;
+    padding: 20px 8%;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.links_container ul li:first-child
+{
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+.links_container ul li
+{
+    text-transform: capitalize;
+    color: rgb(175, 175, 175);
+    font-size: 18px;
+    padding: 10px;
+}
