@@ -375,7 +375,7 @@ nav ul li a.nav__btn {
 .profile__container .profile
 {
     padding: 15px;
-    width: 450px;
+    max-width: 450px;
     
 }
 .profile__container .profile img
